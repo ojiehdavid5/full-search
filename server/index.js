@@ -2,11 +2,11 @@ const express =require('express');
 
 // import {User} from './user'
 
-const { Users }=require('./user');
+const  Users =require('./user');
 
 const app=express();
 
-console.log(Users);
+// console.log(Users);
 
 
 const cors=require('cors');
@@ -15,6 +15,7 @@ app.use(cors());
 
 
 app.get('/',(req,res)=>{
+
 res.json(Users);
 
 })
